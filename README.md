@@ -45,8 +45,10 @@ The five majoor advantages of S3:
 
 # TASK2 - HOST STATIC WEBSITE
 
-1. Add a simple HTML file to the bucket 
-
+1. Add the below simple HTML file in the repo to the bucket 
+```
+index.html
+```
 2. Goto the bucket properties and click on static website hosting -> Enable -> Give name for the html file uploaded -> Save changes
 
 3. Now if we try to access the URL we will be getting a 403 Forbidden error
