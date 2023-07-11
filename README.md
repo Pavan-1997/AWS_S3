@@ -9,7 +9,7 @@ S3 is like a virtual drive to store and retrieve data. According to the AWS defi
 - Its a good practice create buckets in the nearest region to you or for your customers.
 ```
 
-The five majoor advantages of S3:
+The five major advantages of S3:
 
 - Availability & Durability
 - Scalability
