@@ -24,8 +24,28 @@ The five majoor advantages of S3:
 - Monitor access logs and configure alerts to detect any suspicious activities or unauthorized access attempts. 
 - S3 provides features and configurations to assist with compliance requirements, such as enabling Object Lock for data immutability, managing legal holds, and integrating with AWS CloudTraiI for audit trails. 
 ```
-  
 ![image](https://github.com/Pavan-1997/AWS_S3/assets/32020205/2742ddc9-ead5-45e7-8185-a03c805f6651)
+---
+
+# TASK1- RESTRICT A USER FROM ACCESSING THE AWS OBJECT, YET HE IS HAVING ACCESS TO S3 BUCKET FROM IAM 
+
+	1. Create a S3 bucket and add any object 
+	2. Now goto IAM -> Create a user -> Check provide user access to AWS … -> Select I want to create an IAM user -> Give a custom password -> Uncheck user must create a new password …( just to save time to login) -> Next
+	3. Go back to the user -> Goto Permissions -> Add Permissions -> Attach policies directly -> Search and below policies
+	
+	- AmazonS3FullAccess
+
+Click on Next -> Add Permissions
+
+Now the user can see all the buckets and can download the objects
+
+	4.  Now go back to the root user bucket permissions of the created bucket
+	Go to the bucket policy and click on edit  -> Use below code
+	
+	5. Now login to the AWS console using the user we created earlier and try to access the bucket which should show as Insufficient permissions to list objects
+![image](https://github.com/Pavan-1997/AWS_S3/assets/32020205/1dc54029-7985-434f-9f78-dc7050bd1dc0)
+
+
 
 
 
