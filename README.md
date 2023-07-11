@@ -39,6 +39,27 @@ The five majoor advantages of S3:
 	
 5. Now login to the AWS console using the user we created earlier and try to access the bucket which should show as Insufficient permissions to list objects
 
+![USER_S3_PERMISSION](https://github.com/Pavan-1997/AWS_S3/assets/32020205/b7a95811-12f4-4bf4-a349-b344d2b01f88)
+
+---
+
+# TASK2 - HOST STATIC WEBSITE
+
+1. Add a simple HTML file to the bucket 
+
+2. Goto the bucket properties and click on static website hosting -> Enable -> Give name for the html file uploaded -> Save changes
+
+3. Now if we try to access the URL we will be getting a 403 Forbidden error
+
+4. Now goto bucket permissions -> Click on Edit Block public access (bucket settings) -> Uncheck Block all public access -> Click on Save changes -> Confirm 
+
+5. Yet again the access will be denied 
+
+6. Now goto the Bucket Policy and replace the old policy with the below one
+
+![STATIC](https://github.com/Pavan-1997/AWS_S3/assets/32020205/a1c0824c-048c-41a2-b692-bda7d824633e)
+
+
 
 
 
